@@ -22,7 +22,7 @@ body {
   height: 100vh;
   
   font-family: open sans;
-  color: #10214e; /* de tekst kleur wordt in hex kleuren bepaald. */
+  color: #000000; /* de tekst kleur wordt in hex kleuren bepaald. */
 }
 
 /* ARTICLE */
@@ -44,7 +44,7 @@ article {
   
   border-radius: 1rem;
   background: rgb(0 239 255);
-  background: linear-gradient(0deg, rgb(0 239 255) 40%, #4e54c8 100%);
+  background: linear-gradient(0deg, #e888cc 40%, #fe74d9 100%);
   box-shadow: 0 0 20px 20px rgb(0 0 0 / .1);
   
   transition: .25s;
@@ -64,14 +64,14 @@ header {
 h1 {
   margin: 2rem 0 1rem 0; /* Margin is de ruimte om het element heen. Boven beginnen, met de klok mee */
   
-  color: rgb(0 239 255); /* De tekst kleur wordt in rgb() bepaald. */
+  color: rgb(255, 251, 130); /* De tekst kleur wordt in rgb() bepaald. */
 }
 
 /* P */
 /* Hier krijgt de <p> met de class slogan de styling. */
 /* Om een element met class te selecteren gebruik je een . in de selector */
 p.slogan {
-  font-size:1.25em;
+  font: size 1.28em;em;
   color:#030711;
 }
 
@@ -88,7 +88,7 @@ button {
   
   border: none;
   border-radius: 50%; /* De border-radius geeft de <button> ronde hoekjes. */
-  background: rgb(0 239 255);
+  background: rgb(250, 165, 239);
   
   scale:.8;
   
@@ -99,7 +99,7 @@ button {
 /* :hover is een 'Pseudo-class selector', daarmee worden interacties op het element gestyled. */
 button:hover {
   cursor: pointer;
-  background: darkgoldenrod;
+  background: rgb(255, 214, 109);
 }
 /* Met de 'Pseudo-class selector' :focus kan je bepalen hoe het element er uit moet zien als de tab toets op het toetsenbord wordt gebruikt. */
 button:focus {
@@ -114,14 +114,14 @@ button svg {
   top: calc(1.25rem - 12px);
   left: calc(1.25rem - 12px);
   
-  stroke: #4e54c8;
+  stroke: hsl(0, 0%, 100%);
   
   transition: .25s;
   transition-delay: .25s; /* Een transitie op het <svg> element begin 0.25 seconde later. */
 }
 /* Met een komma wordt in een keer de styling op de :hover en de :focus van het <svg> element bepaald. */
 button:hover svg, button:focus svg {
-  stroke: lightyellow;
+  stroke: rgb(248, 209, 193);
 }
 /* Met de 'Pseudo-class selector' :nth-of-type() wordt een element geselecteerd op basis van de volgorde. */
 /* Hier wordt het tweede <svg> element in de button geselecteerd. */
