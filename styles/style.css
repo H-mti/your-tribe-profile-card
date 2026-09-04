@@ -109,17 +109,9 @@ button:focus {
 
 /* In het <button> element staat een <svg> voor het icoon. */
 /* Met een spatie worden alle elementen geselecteerd die in een ander element staan. */
-button svg {
-  position: absolute;
-  top: calc(1.25rem - 12px);
-  left: calc(1.25rem - 12px);
-  
-  stroke: hsl(0, 0%, 100%);
-  
-  transition: .25s;
-  transition-delay: .25s; /* Een transitie op het <svg> element begin 0.25 seconde later. */
-}
-/* Met een komma wordt in een keer de styling op de :hover en de :focus van het <svg> element bepaald. */
+/* 
+\'[kiuhygfrds9\\;994edcdf.                                        */
+
 button:hover svg, button:focus svg {
   stroke: rgb(248, 209, 193);
 }
